@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tracker</title>
+</head>
+<body>
+  <img src="pixel.png" width="1" height="1" style="display:none;">
+  <script>
+    fetch('https://api.github.com/repos/tomicla/Mails/traffic/views')
+      .then(response => response.json())
+      .then(data => console.log(data));
+  </script>
+</body>
+</html>
