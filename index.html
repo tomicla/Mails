@@ -4,11 +4,14 @@
   <title>Tracker</title>
 </head>
 <body>
+  <p>Verificación del Píxel de Seguimiento</p>
   <img src="pixel.png" width="1" height="1" style="display:none;">
   <script>
     fetch('https://api.github.com/repos/tomicla/Mails/traffic/views')
       .then(response => response.json())
-      .then(data => console.log(data));
+      .then(data => console.log(data))
+      .catch(error => console.error('Error:', error));
   </script>
 </body>
 </html>
+
